@@ -1,0 +1,121 @@
+@import "general";
+@import "colores";
+
+$tamañotitulo: 60px;
+
+
+/*CSS GENERAL*/
+body {background-color: $colornegro; font-family: 'Roboto', sans-serif;}
+.container-fluid {padding-left:0px; padding-right:0px;}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+h2{font-size: 45px; font-weight: bold; color:#EDFF0F; padding-bottom: 20px;}
+
+#footer{
+	text-align: right;
+	color:$colornegro;
+	margin-top: 0px;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 30px;}
+
+/*INICIO DESAFIO 12*/
+
+/*CCS INDEX*/
+@for $i from 1 through 3{
+	.fila#{$i} {min-height: 33vh;}
+}
+
+$bgbloque:(
+	contact:$colorrosa,
+	about:$colornaranja,
+	work:$colorlila,
+	blog:$colorgris,
+	presentacion:$colorverde
+	);
+	@each $nombrebloque, $bgcolor in $bgbloque {
+		.bloque--#{$nombrebloque} {background-color: $bgcolor; padding-left: 25px;} 
+	}
+
+.presentacion--texto {
+	text-align: right;
+	padding-top: 1em;
+	color: $coloramarillo; 
+	font-size: 26px; 
+	font-weight: 200; 
+	line-height: 2;
+}
+.presentacion--texto:hover{transform: translateY(-300px); line-height: 1.5;}
+
+.titulos--index {font-size: 60px; font-weight: 100; color:black; text-decoration: none;}
+.titulos--index:hover{color: $coloramarillo;}
+
+.titulos--rrss {color:$colorgris; font-size: 30px; font-weight: 100;}
+.titulos--rrss:hover {@extend.titulos--index:hover; transform: scale(2,2)}
+
+.navbar {justify-content: flex-end;}
+
+/*FIN DESAFÍO 12 con for, each & extend*/
+
+/*CCS BLOG*/
+.body--blog {background-color: $colorgris;margin-right: 0px;}
+.titulos--header--blog {font-size: 60px; color:$colorgris;}
+.jumbotron {background-color: $colorgris; margin-right: 0px;border-radius: 0px;}
+.whatilike {min-height: 300px;}
+.bg-dark {background-color: $colornegro !important;}
+.navbar--blog {justify-content: flex-end; background-color: $colorgris;}
+.linkblog {color:$colorgris; font-size: 30px; font-weight: 100;}
+.linkblog:hover{color: $coloramarillo !important;}
+
+/*CCS ABOUT*/
+.body--about {background-color: $colornaranja;margin-right: 0px;}
+.titulos--header--about {font-size: 60px; color: $colornaranja;}
+.jumbotron {background-color: $colornaranja; margin-right: 0px;border-radius: 0px;}
+.iam {min-height: 300px;}
+.bg-dark {background-color: $colornegro!important;}
+.navbar--about {justify-content: flex-end; background-color: $colornaranja;}
+.linkabout {color:$colornaranja; font-size: 30px; font-weight: 100;}
+.linkabout:hover{color: $coloramarillo!important;}
+.bodyabout {padding-left: 40px; padding-right:40px;}
+
+
+/*CCS WORK*/
+.body--work {background-color: $colorlila;margin-right: 0px;}
+.titulos--header--work {font-size: 60px; color:$colorlila;}
+.navbar-nav {background-color: $colornegro;}
+.jumbotron {background-color: $colornegro; margin-right: 0px;border-radius: 0px;}
+.whatido {min-height: 300px;}
+.bg-dark {background-color: $colornegro!important;}
+.navbar--work {justify-content: flex-end; background-color: $colorlila;}
+.linkwork {color:$colorlila; font-size: 30px; font-weight: 100;}
+.linkwork:hover{color: $coloramarillo!important;}
+.bloquedetexto {padding-left: 40px; padding-right:40px;}
+
+
+/*CCS CONTACT*/
+.body--contact {background-color: $colorrosa;margin-right: 0px;}
+.titulos--header--contact {font-size: 60px; color:$colorrosa;}
+.jumbotron {background-color: $colornegro; margin-right: 0px;border-radius: 0px;}
+.letschat {min-height: 300px;}
+.bg-dark {background-color: $colornegro!important;}
+.navbar--contact {justify-content: flex-end; background-color: $colorrosa;}
+.linkcontact {color:$colorrosa; font-size: 30px; font-weight: 100;}
+.linkcontact:hover{color: $coloramarillo!important;}
+.bodycontact {padding-left: 40px; padding-right:40px;}
+.btn {background-color: $colornegro; border-color: $colornegro;}
+.btn:hover{background-color: $coloramarillo; border-color: $coloramarillo; color:$colornegro!important;}
+
+
+/*RESPONSIVE*/
+@media (max-width: 768px) { 
+.primerafila {height: auto;}
+.segundafila {height: auto;}
+.rrss {display:none;}
+body {text-align: center;}
+}
+
+@media (min-width: 770px) and (max-width: 1198px) {
+ }

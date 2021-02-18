@@ -1,0 +1,258 @@
+@charset "UTF-8";
+.html {
+  font-size: 62.5%; }
+
+/*CSS GENERAL*/
+body {
+  background-color: #323232;
+  font-family: 'Roboto', sans-serif; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none; }
+
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #EDFF0F;
+  padding-bottom: 20px; }
+
+#footer {
+  text-align: right;
+  color: #323232;
+  margin-top: 0px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 30px; }
+
+/*INICIO DESAFIO 12*/
+/*CCS INDEX*/
+.fila1 {
+  min-height: 33vh; }
+
+.fila2 {
+  min-height: 33vh; }
+
+.fila3 {
+  min-height: 33vh; }
+
+.bloque--contact {
+  background-color: #fed4ff;
+  padding-left: 25px; }
+
+.bloque--about {
+  background-color: #ffe3d1;
+  padding-left: 25px; }
+
+.bloque--work {
+  background-color: #E8D9FF;
+  padding-left: 25px; }
+
+.bloque--blog {
+  background-color: #f4f4f4;
+  padding-left: 25px; }
+
+.bloque--presentacion {
+  background-color: #dbf3d0;
+  padding-left: 25px; }
+
+.presentacion--texto {
+  text-align: right;
+  padding-top: 1em;
+  color: #EDFF0F;
+  font-size: 26px;
+  font-weight: 200;
+  line-height: 2; }
+
+.presentacion--texto:hover {
+  transform: translateY(-300px);
+  line-height: 1.5; }
+
+.titulos--index {
+  font-size: 60px;
+  font-weight: 100;
+  color: black;
+  text-decoration: none; }
+
+.titulos--index:hover, .titulos--rrss:hover {
+  color: #EDFF0F; }
+
+.titulos--rrss {
+  color: #f4f4f4;
+  font-size: 30px;
+  font-weight: 100; }
+
+.titulos--rrss:hover {
+  transform: scale(2, 2); }
+
+.navbar {
+  justify-content: flex-end; }
+
+/*FIN DESAFÍO 12 con for, each & extend*/
+/*CCS BLOG*/
+.body--blog {
+  background-color: #f4f4f4;
+  margin-right: 0px; }
+
+.titulos--header--blog {
+  font-size: 60px;
+  color: #f4f4f4; }
+
+.jumbotron {
+  background-color: #f4f4f4;
+  margin-right: 0px;
+  border-radius: 0px; }
+
+.whatilike {
+  min-height: 300px; }
+
+.bg-dark {
+  background-color: #323232 !important; }
+
+.navbar--blog {
+  justify-content: flex-end;
+  background-color: #f4f4f4; }
+
+.linkblog {
+  color: #f4f4f4;
+  font-size: 30px;
+  font-weight: 100; }
+
+.linkblog:hover {
+  color: #EDFF0F !important; }
+
+/*CCS ABOUT*/
+.body--about {
+  background-color: #ffe3d1;
+  margin-right: 0px; }
+
+.titulos--header--about {
+  font-size: 60px;
+  color: #ffe3d1; }
+
+.jumbotron {
+  background-color: #ffe3d1;
+  margin-right: 0px;
+  border-radius: 0px; }
+
+.iam {
+  min-height: 300px; }
+
+.bg-dark {
+  background-color: #323232 !important; }
+
+.navbar--about {
+  justify-content: flex-end;
+  background-color: #ffe3d1; }
+
+.linkabout {
+  color: #ffe3d1;
+  font-size: 30px;
+  font-weight: 100; }
+
+.linkabout:hover {
+  color: #EDFF0F !important; }
+
+.bodyabout {
+  padding-left: 40px;
+  padding-right: 40px; }
+
+/*CCS WORK*/
+.body--work {
+  background-color: #E8D9FF;
+  margin-right: 0px; }
+
+.titulos--header--work {
+  font-size: 60px;
+  color: #E8D9FF; }
+
+.navbar-nav {
+  background-color: #323232; }
+
+.jumbotron {
+  background-color: #323232;
+  margin-right: 0px;
+  border-radius: 0px; }
+
+.whatido {
+  min-height: 300px; }
+
+.bg-dark {
+  background-color: #323232 !important; }
+
+.navbar--work {
+  justify-content: flex-end;
+  background-color: #E8D9FF; }
+
+.linkwork {
+  color: #E8D9FF;
+  font-size: 30px;
+  font-weight: 100; }
+
+.linkwork:hover {
+  color: #EDFF0F !important; }
+
+.bloquedetexto {
+  padding-left: 40px;
+  padding-right: 40px; }
+
+/*CCS CONTACT*/
+.body--contact {
+  background-color: #fed4ff;
+  margin-right: 0px; }
+
+.titulos--header--contact {
+  font-size: 60px;
+  color: #fed4ff; }
+
+.jumbotron {
+  background-color: #323232;
+  margin-right: 0px;
+  border-radius: 0px; }
+
+.letschat {
+  min-height: 300px; }
+
+.bg-dark {
+  background-color: #323232 !important; }
+
+.navbar--contact {
+  justify-content: flex-end;
+  background-color: #fed4ff; }
+
+.linkcontact {
+  color: #fed4ff;
+  font-size: 30px;
+  font-weight: 100; }
+
+.linkcontact:hover {
+  color: #EDFF0F !important; }
+
+.bodycontact {
+  padding-left: 40px;
+  padding-right: 40px; }
+
+.btn {
+  background-color: #323232;
+  border-color: #323232; }
+
+.btn:hover {
+  background-color: #EDFF0F;
+  border-color: #EDFF0F;
+  color: #323232 !important; }
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  .primerafila {
+    height: auto; }
+  .segundafila {
+    height: auto; }
+  .rrss {
+    display: none; }
+  body {
+    text-align: center; } }
